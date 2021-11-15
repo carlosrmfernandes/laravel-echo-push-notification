@@ -15,7 +15,7 @@ export default {
   },
 
   mounted () {
-    window.Echo.channel('CANAL').listen('.DeliveryOrderSellerEvent',(e)=>{
+    window.Echo.channel('CANAL').listen('.EVENTO',(e)=>{
       console.log(e);
     })
   }
