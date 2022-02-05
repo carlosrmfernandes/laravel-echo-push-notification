@@ -15,7 +15,8 @@ export default {
   },
 
   mounted () {
-    window.Echo.channel('CANAL').listen('.EVENTO',(e)=>{
+    window.Echo.channel('channel-delivery-order-seller.2').listen('.DeliveryOrderSellerEvent',(e)=>{
+      alert('você recebu um novo pedido');
       console.log(e);
     })
   }
